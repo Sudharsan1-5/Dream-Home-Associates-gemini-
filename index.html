@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Home Associates | Your Loan, Simplified</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1E40AF',
+              secondary: '#F59E0B',
+              accent: '#10B981',
+            },
+            animation: {
+              'infinite-scroll': 'infinite-scroll 25s linear infinite',
+              'pulse-subtle': 'pulse-subtle 2s infinite',
+            },
+            keyframes: {
+              'infinite-scroll': {
+                from: { transform: 'translateX(0)' },
+                to: { transform: 'translateX(-100%)' },
+              },
+              'pulse-subtle': {
+                '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                '50%': { transform: 'scale(1.05)', opacity: '0.9' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.552.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-white text-gray-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
