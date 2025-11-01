@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { LOAN_SERVICES } from '../constants';
@@ -13,7 +14,7 @@ const LoanTypes: React.FC<LoanTypesProps> = ({ onCheckEligibilityClick }) => {
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
                     Loan Solutions For Every Need
                 </h2>
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {LOAN_SERVICES.map((service, index) => (
                         <div key={index} className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
                             <div className="mb-4">

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { HOW_IT_WORKS_STEPS } from '../constants';
 
@@ -8,7 +9,7 @@ const HowItWorks: React.FC = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
                     Simple 3-Step Process
                 </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-4 text-center relative">
+                <div className="grid md:grid-cols-3 gap-8 md:gap-4 text-center relative">
                     {/* Dashed lines for desktop view */}
                     <div className="hidden md:block absolute top-1/2 left-0 w-full h-full -translate-y-1/2">
                         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute top-[-3rem] left-0">

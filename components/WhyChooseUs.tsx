@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { STATS } from '../constants';
 
@@ -8,7 +9,7 @@ const WhyChooseUs: React.FC = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
                     Why Choose Dream Home Associates?
                 </h2>
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {STATS.map((stat, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
                             <div className="flex justify-center mb-4">
