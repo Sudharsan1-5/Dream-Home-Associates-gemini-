@@ -7,7 +7,7 @@ const TrustBar: React.FC = () => {
 
     return (
         <section className="py-12 bg-white">
-            <div className="container mx-auto px-6 text-center">
+            <div className="container mx-auto px-4 sm:px-6 text-center">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
                     Authorized Partner With India's Leading Banks & NBFCs
                 </h2>

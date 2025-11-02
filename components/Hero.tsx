@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = () => {
 
     return (
         <section className="bg-blue-50 py-20 md:py-32">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 sm:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="text-center md:text-left">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-4">

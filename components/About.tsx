@@ -6,7 +6,7 @@ const About: React.FC = () => {
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(PRE_FILLED_WHATSAPP_MESSAGE)}`;
     return (
         <section className="py-16 bg-blue-50">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 sm:px-6">
                 <div className="grid lg:grid-cols-5 gap-12 items-center">
                     <div className="lg:col-span-2 flex justify-center">
                         {/* Replace with actual photo */}
