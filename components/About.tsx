@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import { WHATSAPP_NUMBER, PRE_FILLED_WHATSAPP_MESSAGE } from '../constants';
@@ -12,7 +11,7 @@ const About: React.FC = () => {
                     <div className="lg:col-span-2 flex justify-center">
                         {/* Replace with actual photo */}
                         <div className="w-80 h-80 rounded-lg bg-gray-300 shadow-2xl overflow-hidden">
-                           <img src="https://picsum.photos/id/237/400/400" alt="Vijay Babu, Loan Expert" className="w-full h-full object-cover"/>
+                           <img src="/vijay_babu.jpg" alt="Vijay Babu, Loan Expert" className="w-full h-full object-cover"/>
                         </div>
                     </div>
                     <div className="lg:col-span-3">

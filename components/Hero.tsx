@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import { PHONE_NUMBER, WHATSAPP_NUMBER, PRE_FILLED_WHATSAPP_MESSAGE } from '../constants';
@@ -35,7 +34,7 @@ const Hero: React.FC<HeroProps> = () => {
                     <div className="flex flex-col items-center">
                         {/* Replace with actual photo */}
                         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gray-300 mb-4 overflow-hidden shadow-2xl border-4 border-white">
-                           <img src="https://picsum.photos/400/400" alt="Vijay Babu, Founder of Dream Home Associates" className="w-full h-full object-cover" />
+                           <img src="/vijay_babu.jpg" alt="Vijay Babu, Founder of Dream Home Associates" className="w-full h-full object-cover" />
                         </div>
                         <p className="text-center text-gray-700 font-semibold italic">"Hi, I'm Vijay Babu - I'll personally handle your case"</p>
                     </div>

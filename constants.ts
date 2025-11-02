@@ -2,8 +2,8 @@ import type { LoanType, Stat, Testimonial, BankPartner, LoanService, Problem, Ho
 import { House, Wallet, Briefcase, Car, TrendingUp, Building, Target, Zap, IndianRupee, UserCheck, Phone, CheckCircle, Star } from 'lucide-react';
 
 // IMPORTANT: UPDATE THIS PHONE NUMBER
-export const PHONE_NUMBER = '+91-8870308819';
-export const WHATSAPP_NUMBER = '918870308819'; // No '+' or '-'
+export const PHONE_NUMBER = '+91-9944548814';
+export const WHATSAPP_NUMBER = '919944548814'; // No '+' or '-'
 
 export const PRE_FILLED_WHATSAPP_MESSAGE = "Hi, I need help with a loan. Can you assist me?";
 

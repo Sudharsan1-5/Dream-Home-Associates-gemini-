@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { PHONE_NUMBER, LOAN_TYPES } from '../constants';
+import { PHONE_NUMBER, LOAN_TYPES, WHATSAPP_NUMBER } from '../constants';
 
 const Footer: React.FC = () => {
     const email = 'dreamhomeassociates@gmail.com';
@@ -35,7 +34,7 @@ const Footer: React.FC = () => {
                         <ul className="space-y-2">
                             <li><a href={`tel:${PHONE_NUMBER}`} className="hover:text-white">📞 {PHONE_NUMBER}</a></li>
                             <li><a href={`mailto:${email}`} className="hover:text-white">📧 {email}</a></li>
-                             <li><a href={`https://wa.me/${PHONE_NUMBER.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-white">💬 WhatsApp: {PHONE_NUMBER}</a></li>
+                             <li><a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer" className="hover:text-white">💬 WhatsApp: {PHONE_NUMBER}</a></li>
                             <li><p>📍 Serving across Tamil Nadu</p></li>
                         </ul>
                     </div>
