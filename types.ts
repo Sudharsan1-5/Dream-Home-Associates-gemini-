@@ -7,6 +7,7 @@ export type LoanType = 'Home Loan' | 'Personal Loan' | 'Business Loan' | 'Car Lo
 export interface BankPartner {
     name: string;
     logo: string;
+    logoUrl?: string;
 }
 
 export interface LoanService {

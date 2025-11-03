@@ -8,16 +8,16 @@ export const WHATSAPP_NUMBER = '919944548814'; // No '+' or '-'
 export const PRE_FILLED_WHATSAPP_MESSAGE = "Hi, I need help with a loan. Can you assist me?";
 
 export const BANK_PARTNERS: BankPartner[] = [
-    { name: 'State Bank of India', logo: 'SBI' },
-    { name: 'HDFC Bank', logo: 'HDFC' },
-    { name: 'ICICI Bank', logo: 'ICICI' },
-    { name: 'Axis Bank', logo: 'Axis' },
-    { name: 'Punjab National Bank', logo: 'PNB' },
-    { name: 'Bank of Baroda', logo: 'BoB' },
-    { name: 'Canara Bank', logo: 'Canara' },
-    { name: 'Union Bank of India', logo: 'Union' },
-    { name: 'IDFC First Bank', logo: 'IDFC' },
-    { name: 'Kotak Mahindra Bank', logo: 'Kotak' },
+    { name: 'State Bank of India', logo: 'SBI', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/SBI-Logo.png' },
+    { name: 'HDFC Bank', logo: 'HDFC', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/HDFC-Bank-Logo.png' },
+    { name: 'ICICI Bank', logo: 'ICICI', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/ICICI-Bank-Logo.png' },
+    { name: 'Axis Bank', logo: 'Axis', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/Axis-Bank-Logo.png' },
+    { name: 'Punjab National Bank', logo: 'PNB', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/Punjab-National-Bank-Logo.png' },
+    { name: 'Bank of Baroda', logo: 'BoB', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/Bank-of-Baroda-Logo.png' },
+    { name: 'Canara Bank', logo: 'Canara', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/Canara-Bank-Logo.png' },
+    { name: 'Union Bank of India', logo: 'Union', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/Union-Bank-of-India-Logo.png' },
+    { name: 'IDFC First Bank', logo: 'IDFC', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/IDFC-First-Bank-Logo.png' },
+    { name: 'Kotak Mahindra Bank', logo: 'Kotak', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/Kotak-Mahindra-Bank-Logo.png' },
 ];
 
 export const LOAN_SERVICES: LoanService[] = [
