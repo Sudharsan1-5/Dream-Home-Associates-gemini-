@@ -11,9 +11,12 @@ const LoanTypes: React.FC<LoanTypesProps> = ({ onCheckEligibilityClick }) => {
     return (
         <section className="py-16 bg-white">
             <div className="container mx-auto px-4 sm:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
-                    Loan Solutions For Every Need
+                <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-3">
+                    Comprehensive Loan Services in Trichy, Tamil Nadu
                 </h2>
+                <p className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                    From home loans to business financing - we offer all types of loan solutions in Trichy with the lowest interest rates and fastest approval
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {LOAN_SERVICES.map((service, index) => (
                         <div key={index} className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">

@@ -15,10 +15,10 @@ const Hero: React.FC<HeroProps> = () => {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="text-center md:text-left">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-4">
-                            Get Your Loan Approved in 72 Hours - Guaranteed
+                            Loan Trichy - Best Loan Consultant in Trichy | 72-Hour Approval Guarantee
                         </h1>
                         <p className="text-lg md:text-xl text-gray-600 mb-8">
-                            500+ Happy Customers Across Tamil Nadu | 40% Higher Approval Rate | Zero Hidden Charges
+                            Expert Loan Services in Trichy, Tamil Nadu - Home Loan, Personal Loan, Business Loan | 500+ Happy Customers | 40% Higher Approval Rate | Zero Hidden Charges
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                             <a href={`tel:${PHONE_NUMBER}`} className="flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-800 transition-transform transform hover:scale-105 shadow-lg">
