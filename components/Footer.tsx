@@ -2,7 +2,8 @@ import React from 'react';
 import { PHONE_NUMBER, LOAN_TYPES, WHATSAPP_NUMBER } from '../constants';
 
 const Footer: React.FC = () => {
-    const email = 'dreamhomeassociates@gmail.com';
+    const email = 'contact@dreamhomeassociates.com';
+    const currentYear = new Date().getFullYear();
     return (
         <footer className="bg-gray-800 text-gray-300 py-16">
             <div className="container mx-auto px-4 sm:px-6">
@@ -15,17 +16,17 @@ const Footer: React.FC = () => {
                     <div>
                         <h4 className="font-bold text-white mb-4">Quick Links</h4>
                         <ul className="space-y-2">
-                            <li><a href="#" className="hover:text-white">Home</a></li>
-                            <li><a href="#" className="hover:text-white">About Us</a></li>
-                            <li><a href="#" className="hover:text-white">Contact</a></li>
-                            <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#home" className="hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</a></li>
+                            <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+                            <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-white mb-4">Loan Types</h4>
+                        <h4 className="font-bold text-white mb-4">Loan Services</h4>
                         <ul className="space-y-2">
                             {LOAN_TYPES.map(type => (
-                                <li key={type}><a href="#" className="hover:text-white">{type}</a></li>
+                                <li key={type}><a href="#loan-services" className="hover:text-white transition-colors">{type}</a></li>
                             ))}
                         </ul>
                     </div>
@@ -40,7 +41,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="border-t border-gray-700 pt-8 text-center text-sm">
-                    <p>&copy; 2024 Dream Home Associates. All Rights Reserved.</p>
+                    <p>&copy; {currentYear} Dream Home Associates. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>

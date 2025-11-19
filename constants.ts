@@ -1,9 +1,13 @@
 import type { LoanType, Stat, Testimonial, BankPartner, LoanService, Problem, HowItWorksStep } from './types';
 import { House, Wallet, Briefcase, Car, TrendingUp, Building, Target, Zap, IndianRupee, UserCheck, Phone, CheckCircle, Star } from 'lucide-react';
 
-// IMPORTANT: UPDATE THIS PHONE NUMBER
+// IMPORTANT: UPDATE THESE CONTACT DETAILS
 export const PHONE_NUMBER = '+91-9944548814';
 export const WHATSAPP_NUMBER = '919944548814'; // No '+' or '-'
+export const EMAIL = 'contact@dreamhomeassociates.com';
+export const BUSINESS_NAME = 'Dream Home Associates';
+export const BUSINESS_TAGLINE = 'Your Trusted Loan Consultant in Trichy';
+export const BUSINESS_ADDRESS = 'Trichy, Tamil Nadu, India';
 
 export const PRE_FILLED_WHATSAPP_MESSAGE = "Hi, I need help with a loan. Can you assist me?";
 
