@@ -1,0 +1,38 @@
+# robots.txt for Dream Home Associates - Loan Consultant in Trichy
+# https://dreamhomeassociates.com
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /vijay_babu.jpg
+
+# Sitemap location
+Sitemap: https://dreamhomeassociates.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Block access to admin or private paths (if any in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

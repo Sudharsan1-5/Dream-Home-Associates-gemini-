@@ -22,15 +22,15 @@ export const BANK_PARTNERS: BankPartner[] = [
 
 export const LOAN_SERVICES: LoanService[] = [
     // FIX: Changed "Home Loans" to "Home Loan" to match LoanType.
-    { name: 'Home Loan', icon: House, description: 'Buy your dream home with competitive interest rates starting from 8.5%' },
+    { name: 'Home Loan', icon: House, description: 'Buy your dream home in Trichy with competitive interest rates starting from 8.5%. Best home loan consultant in Trichy, Tamil Nadu.' },
     // FIX: Changed "Personal Loans" to "Personal Loan" to match LoanType.
-    { name: 'Personal Loan', icon: Wallet, description: 'Instant personal loans up to ₹25 lakhs for any urgent need' },
+    { name: 'Personal Loan', icon: Wallet, description: 'Instant personal loans in Trichy up to ₹25 lakhs for any urgent need. Quick approval and minimal documentation.' },
     // FIX: Changed "Business Loans" to "Business Loan" to match LoanType.
-    { name: 'Business Loan', icon: Briefcase, description: 'Expand your business with customized loan solutions' },
+    { name: 'Business Loan', icon: Briefcase, description: 'Expand your business in Trichy with customized loan solutions. Business loan expert serving all of Tamil Nadu.' },
     // FIX: Changed "Car Loans" to "Car Loan" to match LoanType.
-    { name: 'Car Loan', icon: Car, description: 'Drive your dream car with easy EMI options' },
-    { name: 'Working Capital', icon: TrendingUp, description: 'Manage cash flow seamlessly for your business' },
-    { name: 'Loan Against Property', icon: Building, description: 'Unlock funds using your property as collateral' },
+    { name: 'Car Loan', icon: Car, description: 'Drive your dream car with easy EMI options. Car loans in Trichy with lowest interest rates and fast approval.' },
+    { name: 'Working Capital', icon: TrendingUp, description: 'Manage cash flow seamlessly for your business in Trichy. Working capital loans for SMEs across Tamil Nadu.' },
+    { name: 'Loan Against Property', icon: Building, description: 'Unlock funds using your property as collateral. Loan against property in Trichy with competitive rates and flexible tenure.' },
 ];
 
 export const PROBLEMS: Problem[] = [

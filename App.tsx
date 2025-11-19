@@ -11,6 +11,7 @@ import CIBILForm from './components/CIBILForm';
 import HowItWorks from './components/HowItWorks';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -38,6 +39,7 @@ const App: React.FC = () => {
         <HowItWorks />
         <About />
         <Testimonials />
+        <FAQ />
         <FinalCTA />
       </main>
       <Footer />
