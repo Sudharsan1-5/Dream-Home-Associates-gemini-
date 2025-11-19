@@ -108,7 +108,11 @@ const RangeInput = ({ label, value, setter, min, max, step, displayFormatter, ra
 
 
 // Main Calculator Component
-const EMICalculator = () => {
+interface EMICalculatorProps {
+    onGetOptionsClick?: () => void;
+}
+
+const EMICalculator: React.FC<EMICalculatorProps> = ({ onGetOptionsClick }) => {
     const [amount, setAmount] = useState(2000000);
     const [rate, setRate] = useState(9.0);
     const [tenure, setTenure] = useState(15);
@@ -333,8 +337,8 @@ const EMICalculator = () => {
 
                 {/* Main CTA */}
                 <div className="text-center mt-12">
-                    <button 
-                        onClick={() => console.log('Get Loan Options Clicked!')} 
+                    <button
+                        onClick={onGetOptionsClick}
                         className="inline-flex items-center justify-center bg-[#1e3a8a] text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-opacity-90 transition-colors shadow-2xl"
                     >
                         Get Personalized Loan Options &rarr;
@@ -345,27 +349,4 @@ const EMICalculator = () => {
     );
 };
 
-// Wrapper App component to meet the single file requirement
-const App = () => {
-    // onGetOptionsClick placeholder function
-    const handleGetOptionsClick = () => {
-        console.log('Navigating to loan options...');
-        // In a real app, this would trigger navigation or open a contact modal
-    };
-
-    return (
-        <div className="min-h-screen bg-gray-100">
-            <style>{`
-                /* Global styles for consistency */
-                body {
-                    font-family: 'Inter', sans-serif;
-                }
-            `}</style>
-            
-            {/* The EMI Calculator is the main feature */}
-            <EMICalculator onGetOptionsClick={handleGetOptionsClick} />
-        </div>
-    );
-};
-
-export default App;
+export default EMICalculator;
