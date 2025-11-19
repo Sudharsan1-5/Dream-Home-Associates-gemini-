@@ -8,16 +8,16 @@ export const WHATSAPP_NUMBER = '919944548814'; // No '+' or '-'
 export const PRE_FILLED_WHATSAPP_MESSAGE = "Hi, I need help with a loan. Can you assist me?";
 
 export const BANK_PARTNERS: BankPartner[] = [
-    { name: 'State Bank of India', logo: 'SBI', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/SBI-Logo.png' },
-    { name: 'HDFC Bank', logo: 'HDFC', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/HDFC-Bank-Logo.png' },
-    { name: 'ICICI Bank', logo: 'ICICI', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/ICICI-Bank-Logo.png' },
-    { name: 'Axis Bank', logo: 'Axis', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/Axis-Bank-Logo.png' },
-    { name: 'Punjab National Bank', logo: 'PNB', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/Punjab-National-Bank-Logo.png' },
-    { name: 'Bank of Baroda', logo: 'BoB', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/Bank-of-Baroda-Logo.png' },
-    { name: 'Canara Bank', logo: 'Canara', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/Canara-Bank-Logo.png' },
-    { name: 'Union Bank of India', logo: 'Union', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/Union-Bank-of-India-Logo.png' },
-    { name: 'IDFC First Bank', logo: 'IDFC', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/03/IDFC-First-Bank-Logo.png' },
-    { name: 'Kotak Mahindra Bank', logo: 'Kotak', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/02/Kotak-Mahindra-Bank-Logo.png' },
+    { name: 'State Bank of India', logo: 'SBI', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/500px-SBI-logo.svg.png' },
+    { name: 'HDFC Bank', logo: 'HDFC', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HDFC_Bank_Logo.svg/500px-HDFC_Bank_Logo.svg.png' },
+    { name: 'ICICI Bank', logo: 'ICICI', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ICICI_Bank_Logo.svg/500px-ICICI_Bank_Logo.svg.png' },
+    { name: 'Axis Bank', logo: 'Axis', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Axis_Bank_logo.svg/500px-Axis_Bank_logo.svg.png' },
+    { name: 'Punjab National Bank', logo: 'PNB', logoUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/PNB.svg/500px-PNB.svg.png' },
+    { name: 'Bank of Baroda', logo: 'BoB', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Bank_of_Baroda_logo.svg/500px-Bank_of_Baroda_logo.svg.png' },
+    { name: 'Canara Bank', logo: 'Canara', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Canara_Bank_logo.svg/500px-Canara_Bank_logo.svg.png' },
+    { name: 'Union Bank of India', logo: 'Union', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Union_Bank_of_India_Logo.svg/500px-Union_Bank_of_India_Logo.svg.png' },
+    { name: 'IDFC First Bank', logo: 'IDFC', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/IDFC_First_Bank.svg/500px-IDFC_First_Bank.svg.png' },
+    { name: 'Kotak Mahindra Bank', logo: 'Kotak', logoUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Kotak_Mahindra_Bank_logo.svg/500px-Kotak_Mahindra_Bank_logo.svg.png' },
 ];
 
 export const LOAN_SERVICES: LoanService[] = [
