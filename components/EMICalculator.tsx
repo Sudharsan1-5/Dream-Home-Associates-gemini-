@@ -209,14 +209,33 @@ const EMICalculator: React.FC<EMICalculatorProps> = ({ onGetOptionsClick }) => {
 
     const amortizationSchedule = generateAmortizationSchedule();
 
+    // Calculate potential savings with better rate (0.5% lower)
+    const betterRate = Math.max(6, rate - 0.5);
+    const betterEMI = calculateEMI(amount, betterRate, tenure);
+    const monthlySavings = emi - betterEMI;
+    const totalSavings = monthlySavings * tenure * 12;
+
     return (
-        <section className="py-12 md:py-20 bg-gray-50 antialiased">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-4" style={{ color: PRIMARY_COLOR }}>
-                    Accurate EMI & Loan Breakdown
+        <section className="py-12 md:py-20 bg-gradient-to-br from-blue-50 to-white antialiased relative overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-5">
+                <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(30,64,175,0.15) 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
+            </div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                {/* Trust Badge */}
+                <div className="flex justify-center mb-6">
+                    <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold border-2 border-green-200">
+                        <span className="text-lg">✓</span>
+                        <span>Used by 500+ Happy Customers</span>
+                    </div>
+                </div>
+
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-3 font-heading" style={{ color: PRIMARY_COLOR }}>
+                    Calculate Your Loan EMI Instantly
                 </h2>
-                <p className="text-lg text-gray-600 text-center mb-10">
-                    Visualize your payment schedule and total interest paid instantly.
+                <p className="text-lg md:text-xl text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+                    See exactly what you'll pay. Get the best rates in Trichy. Save thousands on your loan!
                 </p>
 
                 <div className="bg-white p-6 md:p-10 rounded-2xl shadow-2xl border-t-8" style={{ borderColor: SECONDARY_COLOR }}>
@@ -291,6 +310,31 @@ const EMICalculator: React.FC<EMICalculatorProps> = ({ onGetOptionsClick }) => {
                     </div>
                 </div>
 
+                {/* Savings Callout */}
+                {totalSavings > 0 && (
+                    <div className="mt-8 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-6 shadow-lg">
+                        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                            <div className="text-center md:text-left">
+                                <p className="text-sm font-semibold text-green-700 mb-1">💰 YOU COULD SAVE</p>
+                                <p className="text-3xl md:text-4xl font-extrabold text-green-600 financial-number">
+                                    {formatCurrency(totalSavings)}
+                                </p>
+                                <p className="text-sm text-gray-600 mt-1">
+                                    By getting just {(rate - betterRate).toFixed(1)}% lower interest rate!
+                                </p>
+                            </div>
+                            <div className="flex-shrink-0">
+                                <button
+                                    onClick={onGetOptionsClick}
+                                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-bold text-lg shadow-lg transition-all transform hover:scale-105"
+                                >
+                                    Get Lower Rate Now →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
                 {/* 3. AMORTIZATION SCHEDULE */}
                 <div className="mt-12">
                     <button 
@@ -335,14 +379,24 @@ const EMICalculator: React.FC<EMICalculatorProps> = ({ onGetOptionsClick }) => {
                     )}
                 </div>
 
-                {/* Main CTA */}
+                {/* Main CTA with Urgency */}
                 <div className="text-center mt-12">
-                    <button
-                        onClick={onGetOptionsClick}
-                        className="inline-flex items-center justify-center bg-[#1e3a8a] text-white px-10 py-4 rounded-full text-xl font-bold hover:bg-opacity-90 transition-colors shadow-2xl"
-                    >
-                        Get Personalized Loan Options &rarr;
-                    </button>
+                    <div className="inline-block">
+                        <div className="mb-3">
+                            <span className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold animate-pulse">
+                                <span className="text-lg">⏰</span>
+                                <span>Limited Time: 0.5% Rate Reduction Available!</span>
+                            </span>
+                        </div>
+                        <button
+                            onClick={onGetOptionsClick}
+                            className="inline-flex items-center justify-center bg-[#1e3a8a] text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-2xl"
+                        >
+                            <span>Get Best Loan Options Now</span>
+                            <span className="ml-2 text-2xl">→</span>
+                        </button>
+                        <p className="text-sm text-gray-500 mt-3">✓ Free Consultation | ✓ 72-Hour Approval | ✓ 500+ Happy Customers</p>
+                    </div>
                 </div>
             </div>
         </section>

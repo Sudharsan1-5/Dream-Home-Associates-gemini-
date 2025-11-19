@@ -8,6 +8,11 @@
     <link rel="mask-icon" href="/favicon.svg" color="#1E40AF" />
     <meta name="theme-color" content="#1E40AF" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Professional Financial Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Primary Meta Tags -->
     <title>Loan Trichy - #1 Loan Consultant in Trichy | Home, Personal & Business Loans | Dream Home Associates</title>
@@ -359,6 +364,11 @@
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+              'heading': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+              'display': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+            },
             colors: {
               primary: '#1E40AF',
               secondary: '#F59E0B',
@@ -367,6 +377,8 @@
             animation: {
               'infinite-scroll': 'infinite-scroll 25s linear infinite',
               'pulse-subtle': 'pulse-subtle 2s infinite',
+              'fade-in': 'fadeIn 0.6s ease-in-out',
+              'slide-up': 'slideUp 0.8s ease-out',
             },
             keyframes: {
               'infinite-scroll': {
@@ -377,11 +389,41 @@
                 '0%, 100%': { transform: 'scale(1)', opacity: '1' },
                 '50%': { transform: 'scale(1.05)', opacity: '0.9' },
               },
+              'fadeIn': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'slideUp': {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
             }
           }
         }
       }
     </script>
+    <style>
+      * {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .font-display {
+        font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+      }
+
+      /* Financial Numbers Styling */
+      .financial-number {
+        font-family: 'Poppins', monospace;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
