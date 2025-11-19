@@ -8,16 +8,16 @@ export const WHATSAPP_NUMBER = '919944548814'; // No '+' or '-'
 export const PRE_FILLED_WHATSAPP_MESSAGE = "Hi, I need help with a loan. Can you assist me?";
 
 export const BANK_PARTNERS: BankPartner[] = [
-    { name: 'State Bank of India', logo: 'SBI', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/500px-SBI-logo.svg.png' },
-    { name: 'HDFC Bank', logo: 'HDFC', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HDFC_Bank_Logo.svg/500px-HDFC_Bank_Logo.svg.png' },
-    { name: 'ICICI Bank', logo: 'ICICI', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/ICICI_Bank_Logo.svg/500px-ICICI_Bank_Logo.svg.png' },
-    { name: 'Axis Bank', logo: 'Axis', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Axis_Bank_logo.svg/500px-Axis_Bank_logo.svg.png' },
-    { name: 'Punjab National Bank', logo: 'PNB', logoUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/PNB.svg/500px-PNB.svg.png' },
-    { name: 'Bank of Baroda', logo: 'BoB', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Bank_of_Baroda_logo.svg/500px-Bank_of_Baroda_logo.svg.png' },
-    { name: 'Canara Bank', logo: 'Canara', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Canara_Bank_logo.svg/500px-Canara_Bank_logo.svg.png' },
-    { name: 'Union Bank of India', logo: 'Union', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Union_Bank_of_India_Logo.svg/500px-Union_Bank_of_India_Logo.svg.png' },
-    { name: 'IDFC First Bank', logo: 'IDFC', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/IDFC_First_Bank.svg/500px-IDFC_First_Bank.svg.png' },
-    { name: 'Kotak Mahindra Bank', logo: 'Kotak', logoUrl: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Kotak_Mahindra_Bank_logo.svg/500px-Kotak_Mahindra_Bank_logo.svg.png' },
+    { name: 'State Bank of India', logo: 'SBI', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg' },
+    { name: 'HDFC Bank', logo: 'HDFC', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg' },
+    { name: 'ICICI Bank', logo: 'ICICI', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg' },
+    { name: 'Axis Bank', logo: 'Axis', logoUrl: 'https://companieslogo.com/img/orig/AXISBANK.NS-b214e1e7.png' },
+    { name: 'Punjab National Bank', logo: 'PNB', logoUrl: 'https://upload.wikimedia.org/wikipedia/en/4/41/PNB.svg' },
+    { name: 'Bank of Baroda', logo: 'BoB', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Bank_of_Baroda_logo.svg' },
+    { name: 'Canara Bank', logo: 'Canara', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Canara_Bank_logo.svg' },
+    { name: 'Union Bank of India', logo: 'Union', logoUrl: 'https://companieslogo.com/img/orig/UNIONBANK.NS-cadaeb17.png' },
+    { name: 'IDFC First Bank', logo: 'IDFC', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/81/IDFC_First_Bank.svg' },
+    { name: 'Kotak Mahindra Bank', logo: 'Kotak', logoUrl: 'https://companieslogo.com/img/orig/KOTAKBANK.NS_BIG-01054ec7.png' },
 ];
 
 export const LOAN_SERVICES: LoanService[] = [
